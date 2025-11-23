@@ -46,7 +46,7 @@ An end-to-end AI system that recommends career roles and generates personalized 
 
 5. **Launch the UI**:
    ```bash
-  [ streamlit run ui/app.py](https://career-ai-system.streamlit.app/)
+   https://career-ai-system.streamlit.app/
    ```
 
 6. **Access the application**:
