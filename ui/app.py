@@ -18,6 +18,31 @@ logger = logging.getLogger("UI")
 st.set_page_config(page_title="AI Career Recommender", layout="wide")
 
 @st.cache_resource
+def ensure_models_exist():
+    """Run pipeline if models don't exist (for Streamlit Cloud deployment)"""
+    model_path = "models/best_model.pkl"
+    if not os.path.exists(model_path):
+        st.info("🔄 First-time setup: Training models... This will take 2-3 minutes.")
+        try:
+            import subprocess
+            result = subprocess.run(
+                [sys.executable, "run_pipeline.py"],
+                capture_output=True,
+                text=True,
+                cwd=os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+            )
+            if result.returncode == 0:
+                st.success("✅ Models trained successfully!")
+                return True
+            else:
+                st.error(f"❌ Pipeline failed: {result.stderr}")
+                return False
+        except Exception as e:
+            st.error(f"❌ Error running pipeline: {str(e)}")
+            return False
+    return True
+
+@st.cache_resource
 def load_model():
     model_path = "models/best_model.pkl"
     if not os.path.exists(model_path):
@@ -35,6 +60,11 @@ def load_skill_matrix():
 def main():
     st.title("AI-Powered Career Recommendation System")
     st.markdown("Enter your profile details to get personalized career advice and a learning roadmap.")
+    
+    # Ensure models exist (auto-run pipeline on first load)
+    if not ensure_models_exist():
+        st.error("Failed to initialize models. Please check the logs.")
+        return
 
     with st.sidebar:
         st.header("Student Profile")
