@@ -1,45 +1,45 @@
 {
   "Backend Engineer": {
     "precision": 1.0,
-    "recall": 0.95,
-    "f1-score": 0.9743589743589743,
-    "support": 20.0
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 15.0
   },
   "Data Engineer": {
     "precision": 1.0,
-    "recall": 0.8666666666666667,
-    "f1-score": 0.9285714285714286,
-    "support": 15.0
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 26.0
   },
   "Data Scientist": {
-    "precision": 0.9259259259259259,
+    "precision": 0.9347826086956522,
     "recall": 1.0,
-    "f1-score": 0.9615384615384616,
-    "support": 50.0
+    "f1-score": 0.9662921348314607,
+    "support": 43.0
   },
   "DevOps Engineer": {
     "precision": 1.0,
-    "recall": 0.8333333333333334,
-    "f1-score": 0.9090909090909091,
-    "support": 6.0
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4.0
   },
   "Frontend Engineer": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 9.0
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
+    "support": 12.0
   },
-  "accuracy": 0.96,
+  "accuracy": 0.97,
   "macro avg": {
-    "precision": 0.9851851851851852,
-    "recall": 0.93,
-    "f1-score": 0.9547119547119547,
+    "precision": 0.9869565217391305,
+    "recall": 0.95,
+    "f1-score": 0.9646869983948635,
     "support": 100.0
   },
   "weighted avg": {
-    "precision": 0.962962962962963,
-    "recall": 0.96,
-    "f1-score": 0.9594721944721943,
+    "precision": 0.9719565217391305,
+    "recall": 0.97,
+    "f1-score": 0.9683627608346709,
     "support": 100.0
   }
 }

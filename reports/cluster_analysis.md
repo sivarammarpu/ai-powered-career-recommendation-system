@@ -3,22 +3,22 @@
 Number of clusters: 4
 
 ## Cluster 0
-- Size: 63
-- Avg CGPA: 9.30
-- Top Skills: python, sql, react
+- Size: 37
+- Avg CGPA: 7.98
+- Top Skills: node.js, python, react
 
 ## Cluster 1
-- Size: 41
-- Avg CGPA: 6.72
-- Top Skills: sql, node.js, python
+- Size: 45
+- Avg CGPA: 7.01
+- Top Skills: pandas, aws, docker
 
 ## Cluster 2
-- Size: 49
-- Avg CGPA: 8.27
-- Top Skills: node.js, pytorch, aws
+- Size: 77
+- Avg CGPA: 9.28
+- Top Skills: aws, sql, react
 
 ## Cluster 3
-- Size: 47
-- Avg CGPA: 7.00
-- Top Skills: pandas, java, docker
+- Size: 41
+- Avg CGPA: 6.84
+- Top Skills: python, aws, sql
 
