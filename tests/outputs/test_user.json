@@ -1,0 +1,44 @@
+{
+  "student_id": "test_user",
+  "target_role": "Data Engineer",
+  "duration_weeks": 12,
+  "modules": [
+    {
+      "week": "1-4",
+      "topic": "Foundations of Data Engineer",
+      "resources": [
+        {
+          "title": "Data Engineering Zoomcamp",
+          "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp",
+          "type": "Course"
+        },
+        {
+          "title": "Designing Data-Intensive Applications",
+          "url": "https://dataintensive.net/",
+          "type": "Book"
+        }
+      ]
+    },
+    {
+      "week": "5-6",
+      "topic": "Learn Python",
+      "resources": [
+        {
+          "title": "Python for Everybody (Coursera)",
+          "url": "https://www.coursera.org/specializations/python",
+          "type": "Course"
+        },
+        {
+          "title": "Real Python Tutorials",
+          "url": "https://realpython.com/",
+          "type": "Article"
+        }
+      ]
+    },
+    {
+      "week": "11-12",
+      "topic": "Capstone Project",
+      "description": "Build a complete Data Engineer project using Python."
+    }
+  ]
+}

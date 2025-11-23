@@ -1,0 +1,28 @@
+{
+  "student_id": "current_user",
+  "target_role": "Data Engineer",
+  "duration_weeks": 12,
+  "modules": [
+    {
+      "week": "1-4",
+      "topic": "Foundations of Data Engineer",
+      "resources": [
+        {
+          "title": "Data Engineering Zoomcamp",
+          "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp",
+          "type": "Course"
+        },
+        {
+          "title": "Designing Data-Intensive Applications",
+          "url": "https://dataintensive.net/",
+          "type": "Book"
+        }
+      ]
+    },
+    {
+      "week": "11-12",
+      "topic": "Capstone Project",
+      "description": "Build a complete Data Engineer project using spark, etl, kafka."
+    }
+  ]
+}
