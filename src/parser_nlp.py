@@ -124,6 +124,7 @@ class SkillExtractor:
         
         # Also save the parsed jobs with extracted skills for the next step
         parsed_jobs_path = os.path.join("data/jobs/parsed", "jobs.json")
+        os.makedirs(os.path.dirname(parsed_jobs_path), exist_ok=True)
         with open(parsed_jobs_path, 'w') as f:
             json.dump(all_jobs_data, f, indent=2)
         logger.info(f"Saved parsed jobs to {parsed_jobs_path}")
